@@ -125,7 +125,7 @@ export default function About({ showOnlyIntro = false, onNavigate }: AboutProps)
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-6 relative aspect-video sm:aspect-square lg:aspect-auto h-[450px] rounded-none overflow-hidden shadow-2xl border border-[#C5A059]/20"
+            className="lg:col-span-6 w-full relative h-[260px] sm:h-[380px] lg:h-[450px] rounded-none overflow-hidden shadow-2xl border border-[#C5A059]/20"
           >
             <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&q=80&w=1200')" }} />
             <div className="absolute inset-0 bg-gradient-to-t from-[#1B2E21] via-[#1B2E21]/30 to-transparent" />
