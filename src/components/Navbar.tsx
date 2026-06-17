@@ -68,7 +68,7 @@ export default function Navbar({ currentTab, setCurrentTab, onOpenQuoteModal }: 
               onClick={() => handleTabClick("home")}
               className="flex items-center gap-2.5 text-left group cursor-pointer focus:outline-none"
             >
-              <LakeduckLogo className="w-10 h-10 shadow-md" dark={true} />
+              <LakeduckLogo className="w-10 h-10" dark={true} />
               <div>
                 <span className="block font-display font-black text-lg sm:text-xl tracking-tight leading-none text-[#1B2E21]">
                   LAKEDUCK

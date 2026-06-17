@@ -70,7 +70,7 @@ export default function Footer({ onNavigate, onOpenQuoteModal, onAdminTrigger }:
             }}
             className="flex items-center gap-2.5 text-left group cursor-pointer focus:outline-none"
           >
-            <LakeduckLogo className="w-9 h-9 shadow-md" dark={true} />
+            <LakeduckLogo className="w-9 h-9" dark={true} />
             <div>
               <span className="block font-serif italic font-semibold text-lg tracking-tight leading-none text-white">
                 LAKEDUCK
