@@ -84,7 +84,7 @@ export default function About({ showOnlyIntro = false, onNavigate }: AboutProps)
             </h2>
 
             <p className="text-[#1B2E21]/80 text-base sm:text-lg leading-relaxed font-light">
-              Founded at the heart of West Africa’s agricultural trade, Lakeduck Integrated Limited serves as the definitive bridge between diligent smallholder farmers in Nigeria, eco-friendly recycling operators, and premier industrial buyers worldwide. 
+              Founded at the heart of West Africa’s agricultural trade, Lakeduck Integrated serves as the definitive bridge between diligent smallholder farmers in Nigeria, eco-friendly recycling operators, and premier industrial buyers worldwide. 
             </p>
 
             <p className="text-[#1B2E21]/75 text-sm sm:text-base leading-relaxed font-light">

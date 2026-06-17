@@ -135,7 +135,7 @@ export const COMMODITIES: Commodity[] = [
       "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&q=80&w=800",
       "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=800"
     ],
-    moistureContent: "7.0% - 8.0% maximum",
+    moistureContent: "8.0% - 10.0% maximum",
     purityLevel: "98.5% minimum",
     exportDestinations: ["Haiphong (Vietnam)", "Tuticorin (India)", "Qingdao (China)", "Klang (Malaysia)"],
     packagingOptions: [
@@ -150,7 +150,7 @@ export const COMMODITIES: Commodity[] = [
     specs: [
       { label: "Kernel Outturn Ratio (KOR)", value: "48 to 52 lbs minimum per 80kg bag" },
       { label: "Nut Count", value: "180 to 200 nuts per kilogram maximum" },
-      { label: "Moisture Content", value: "7.0% - 8.0% maximum" },
+      { label: "Moisture Content", value: "8.0% - 10.0% maximum" },
       { label: "Foreign Matter / Trash", value: "0.25% - 0.5% maximum" },
       { label: "Defective Seeds", value: "5.0% maximum" },
       { label: "Floaters", value: "Strictly under 3%" }
@@ -523,7 +523,7 @@ export const BLOGS: BlogPost[] = [
     author: "Alhaji Farouk Bello (Chief Operations)",
     readingTime: "8 min read",
     image: cashewImage,
-    content: "Exporting raw cashew nuts requires absolute precision. Quality parameters dictate pricing in international processing hubs like India and Vietnam. Two key factors measure standard quality: Kernel Outturn Ratio (KOR) and Nut Count.\n\nFirst, secure nuts with a KOR of at least 48 lbs (preferably above 50 lbs) and a nut count below 200 per kilogram. Higher numbers guarantee better processing yields. Second, handle moisture content extremely carefully; it must remain sub 8%. Sun-drying raw cashews on clean concrete floors before storage is mandatory to prevent intermediate moisture deterioration during transit. Pack only in well-ventilated woven Jute bags to facilitate optimal airflow on ocean voyages.",
+    content: "Exporting raw cashew nuts requires absolute precision. Quality parameters dictate pricing in international processing hubs like India and Vietnam. Two key factors measure standard quality: Kernel Outturn Ratio (KOR) and Nut Count.\n\nFirst, secure nuts with a KOR of at least 48 lbs (preferably above 50 lbs) and a nut count below 200 per kilogram. Higher numbers guarantee better processing yields. Second, handle moisture content extremely carefully; it must remain sub 10%. Sun-drying raw cashews on clean concrete floors before storage is mandatory to prevent intermediate moisture deterioration during transit. Pack only in well-ventilated woven Jute bags to facilitate optimal airflow on ocean voyages.",
     featured: true
   },
   {

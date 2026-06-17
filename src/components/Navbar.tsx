@@ -74,7 +74,7 @@ export default function Navbar({ currentTab, setCurrentTab, onOpenQuoteModal }: 
                   LAKEDUCK
                 </span>
                 <span className="block text-[8px] font-mono tracking-[1.5px] uppercase font-semibold text-[#C5A059]">
-                  INTEGRATED LIMITED
+                  INTEGRATED
                 </span>
               </div>
             </button>

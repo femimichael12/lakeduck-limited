@@ -539,7 +539,7 @@ export default function Contact({ initialCommodityId = "", onCloseModal, isModal
                       rows={4}
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
-                      placeholder="Input requested moisture levels (e.g. cocoa < 7.5%, cashew RCN < 8%), admixture margins (e.g. sesame < 0.5%), preferred shipment month, target L/C terms, or pre-shipping laboratory sampling requirements."
+                      placeholder="Input requested moisture levels (e.g. cocoa < 7.5%, cashew RCN < 10%), admixture margins (e.g. sesame < 0.5%), preferred shipment month, target L/C terms, or pre-shipping laboratory sampling requirements."
                       className="w-full bg-[#FAF8F5] border border-[#1B2E21]/15 focus:border-[#C5A059] rounded-none py-2.5 px-3.5 text-xs outline-none text-[#1B2E21] focus:bg-white resize-none"
                     />
                   </div>

@@ -76,13 +76,13 @@ export default function Footer({ onNavigate, onOpenQuoteModal, onAdminTrigger }:
                 LAKEDUCK
               </span>
               <span className="block text-[8px] font-mono tracking-[1.5px] uppercase font-semibold text-[#C5A059]">
-                INTEGRATED LIMITED
+                INTEGRATED
               </span>
             </div>
           </button>
 
           <p className="text-gray-400 text-xs leading-relaxed max-w-sm font-sans font-light">
-            Lakeduck Integrated Limited handles the end-to-end sourcing, cleaning, double-sifting, certification, packaging, recycling processing, and marine container shipping of agricultural products and recycled materials from West Africa to global factories.
+            Lakeduck Integrated handles the end-to-end sourcing, cleaning, double-sifting, certification, packaging, recycling processing, and marine container shipping of agricultural products and recycled materials from West Africa to global factories.
           </p>
 
           <div className="flex gap-4 text-xs font-mono text-gray-500">
@@ -226,7 +226,7 @@ export default function Footer({ onNavigate, onOpenQuoteModal, onAdminTrigger }:
           <div className="space-y-3">
             <div className="flex gap-2 items-start">
               <Award className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
-              <span>SGS & Cotecna compliant sealing</span>
+              <span>SGS, Bureau Veritas & Cotecna compliant sealing</span>
             </div>
             <div className="flex gap-2 items-start">
               <FileText className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
@@ -249,7 +249,7 @@ export default function Footer({ onNavigate, onOpenQuoteModal, onAdminTrigger }:
             className="cursor-pointer transition-colors hover:text-[#C5A059]"
             title="Sourced with fairness"
           >
-            &copy; {new Date().getFullYear()} Lakeduck Integrated Limited & Export House. Sourced with fairness.
+            &copy; {new Date().getFullYear()} Lakeduck Integrated & Export House. Sourced with fairness.
           </span>
         </div>
         <div className="flex gap-4">

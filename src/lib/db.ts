@@ -41,7 +41,7 @@ const INITIAL_HOMEPAGE = {
   heroSubtitle: "Connecting premium Nigerian Cocoa, Sesame, Split Ginger, and Cashew Nuts with global buyers. Cleaned, sorted, and dispatched under strict moisture control pipelines.",
   heroPromoText: "TRADE DESK ALLOCATION WINDOW OPEN — JUNE 2026",
   companyIntroTitle: "Earthy Agricultural Sourcing Built For Global Standards",
-  companyIntroText: "Lakeduck Integrated Limited serves as the definitive bridge between diligent smallholder farmers in Nigeria, premium bio-recycling partners, and premier industrial buyers worldwide.",
+  companyIntroText: "Lakeduck Integrated serves as the definitive bridge between diligent smallholder farmers in Nigeria, premium bio-recycling partners, and premier industrial buyers worldwide.",
   statsExperience: "10+",
   statsCountries: "50+",
   statsShipments: "1000+",

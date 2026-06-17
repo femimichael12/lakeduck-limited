@@ -702,7 +702,7 @@ export default function Blog() {
 
               {/* Reader panel bottom actions controls footer bar */}
               <div className="bg-[#1B2E21]/5 border-t border-black/10 p-5 flex justify-between items-center text-xs font-mono shrink-0">
-                <span className="text-gray-500">Lakeduck Integrated Limited &copy; 2026</span>
+                <span className="text-gray-500">Lakeduck Integrated &copy; 2026</span>
                 <button
                   onClick={() => setActiveArticle(null)}
                   className="px-5 py-2.5 bg-[#1B2E21] text-white hover:bg-[#C5A059] transition-colors cursor-pointer text-xs font-bold uppercase tracking-wider"

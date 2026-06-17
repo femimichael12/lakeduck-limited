@@ -19,7 +19,7 @@ const HERO_SLIDES = [
   {
     image: cocoaImage,
     subtitle: "PREMIUM AGRO-COMMODITIES & BIO-RECYCLING EXPORT",
-    description: "Lakeduck Integrated Limited exports Grade 1 Cocoa, Shea products, premium Sesame seeds, raw Cashew Nuts, Soya, Maize, and recycled materials like plastics and end-of-life tires to global manufacturing industries."
+    description: "Lakeduck Integrated exports Grade 1 Cocoa, Shea products, premium Sesame seeds, raw Cashew Nuts, Soya, Maize, and recycled materials like plastics and end-of-life tires to global manufacturing industries."
   },
   {
     image: smallholderImage,
@@ -89,7 +89,7 @@ export default function Hero({ onNavigate, onOpenQuoteModal }: HeroProps) {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extralight italic tracking-tight leading-[1.08] text-white"
             >
-              Connecting <span className="text-[#C5A059] not-italic font-bold">African Agricultural Excellence</span> to Global Markets
+              Connecting <span className="text-[#C5A059] not-italic font-bold">African Excellence</span> to Global Markets
             </motion.h1>
           </div>
 
