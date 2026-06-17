@@ -13,19 +13,32 @@ const getSupabaseConfig = () => {
   const localUrl = localStorage.getItem("VCD_SUPABASE_URL");
   const localKey = localStorage.getItem("VCD_SUPABASE_ANON_KEY");
 
+  const url = (envUrl || localUrl || "").trim();
+  const key = (envKey || localKey || "").trim();
+
+  // Validate that the URL is a proper web URL to prevent createClient from throwing on malformed inputs
+  const isValidHttpUrl = url.startsWith("http://") || url.startsWith("https://");
+
   return {
-    url: envUrl || localUrl || "",
-    key: envKey || localKey || "",
-    isConfigured: !!(envUrl || localUrl) && !!(envKey || localKey)
+    url,
+    key,
+    isConfigured: isValidHttpUrl && !!key
   };
 };
 
 export const config = getSupabaseConfig();
 
-// Initialize client if configured, otherwise export a dummy / proxy handler that can be checked
-export const supabase = config.isConfigured 
-  ? createClient(config.url, config.key)
-  : null;
+// Initialize client if configured, otherwise export null and handle failures gracefully
+let supabaseClient = null;
+if (config.isConfigured) {
+  try {
+    supabaseClient = createClient(config.url, config.key);
+  } catch (error) {
+    console.error("Failed to initialize Supabase client with the provided credentials:", error);
+  }
+}
+
+export const supabase = supabaseClient;
 
 /**
  * Returns SQL scripts to provision a Supabase Database matching our schema.
