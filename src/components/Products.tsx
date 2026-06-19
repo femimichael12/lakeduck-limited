@@ -17,9 +17,11 @@ import { Commodity } from "../types";
 
 interface ProductsProps {
   onOpenQuoteModal?: (commodityId: string) => void;
+  initialProductId?: string | null;
+  onClearInitialProduct?: () => void;
 }
 
-export default function Products({ onOpenQuoteModal }: ProductsProps) {
+export default function Products({ onOpenQuoteModal, initialProductId, onClearInitialProduct }: ProductsProps) {
   // Navigation & Search State
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
@@ -44,7 +46,7 @@ export default function Products({ onOpenQuoteModal }: ProductsProps) {
   const [quoteReceipt, setQuoteReceipt] = useState<any | null>(null);
 
   // Categories list based on our product range
-  const categories = ["All", "Cocoa & Coffee", "Grains & Seeds", "Spices", "Nuts"];
+  const categories = ["All", "Cocoa & Coffee", "Grains & Seeds", "Spices", "Nuts", "Solid Minerals", "Recycled Materials"];
 
   // Filter Commodities
   const filteredCommodities = COMMODITIES.filter((item) => {
@@ -76,6 +78,19 @@ export default function Products({ onOpenQuoteModal }: ProductsProps) {
       message: `Enquiry for ${product.name} standard shipment allocation.`
     });
   };
+
+  // Direct redirection to specifications detail page from external views
+  useEffect(() => {
+    if (initialProductId) {
+      const crop = COMMODITIES.find((item) => item.id === initialProductId);
+      if (crop) {
+        handleOpenDetailedPage(crop);
+        if (onClearInitialProduct) {
+          onClearInitialProduct();
+        }
+      }
+    }
+  }, [initialProductId]);
 
   // Printing Brochure
   const handlePrintBrochure = (product: Commodity) => {

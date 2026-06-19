@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { Shield, Sparkles, Award, CheckCircle, Leaf, Milestone, Star, Users, MapPin } from "lucide-react";
+import { Shield, Award, CheckCircle, Leaf, Milestone, Star, Users, MapPin } from "lucide-react";
 import { STATS, CERTIFICATIONS, TESTIMONIALS } from "../data";
 
 interface AboutProps {

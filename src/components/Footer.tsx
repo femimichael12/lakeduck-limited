@@ -11,9 +11,15 @@ interface FooterProps {
   onNavigate: (tab: string) => void;
   onOpenQuoteModal: () => void;
   onAdminTrigger?: () => void;
+  onSelectProduct?: (productId: string) => void;
 }
 
-export default function Footer({ onNavigate, onOpenQuoteModal, onAdminTrigger }: FooterProps) {
+export default function Footer({ 
+  onNavigate, 
+  onOpenQuoteModal, 
+  onAdminTrigger,
+  onSelectProduct 
+}: FooterProps) {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -99,11 +105,15 @@ export default function Footer({ onNavigate, onOpenQuoteModal, onAdminTrigger }:
             <li>
               <button
                 onClick={() => {
-                  onNavigate("products");
-                  setTimeout(() => {
-                    const el = document.getElementById("commodity-cocoa-beans");
-                    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
-                  }, 150);
+                  if (onSelectProduct) {
+                    onSelectProduct("cocoa-beans");
+                  } else {
+                    onNavigate("products");
+                    setTimeout(() => {
+                      const el = document.getElementById("commodity-cocoa-beans");
+                      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+                    }, 150);
+                  }
                 }}
                 className="hover:text-[#C5A059] transition-colors cursor-pointer text-left"
               >
@@ -113,11 +123,15 @@ export default function Footer({ onNavigate, onOpenQuoteModal, onAdminTrigger }:
             <li>
               <button
                 onClick={() => {
-                  onNavigate("products");
-                  setTimeout(() => {
-                    const el = document.getElementById("commodity-sesame-seeds");
-                    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
-                  }, 150);
+                  if (onSelectProduct) {
+                    onSelectProduct("sesame-seeds");
+                  } else {
+                    onNavigate("products");
+                    setTimeout(() => {
+                      const el = document.getElementById("commodity-sesame-seeds");
+                      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+                    }, 150);
+                  }
                 }}
                 className="hover:text-[#C5A059] transition-colors cursor-pointer text-left"
               >
@@ -127,11 +141,15 @@ export default function Footer({ onNavigate, onOpenQuoteModal, onAdminTrigger }:
             <li>
               <button
                 onClick={() => {
-                  onNavigate("products");
-                  setTimeout(() => {
-                    const el = document.getElementById("commodity-ginger-dried");
-                    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
-                  }, 150);
+                  if (onSelectProduct) {
+                    onSelectProduct("ginger-dried");
+                  } else {
+                    onNavigate("products");
+                    setTimeout(() => {
+                      const el = document.getElementById("commodity-ginger-dried");
+                      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+                    }, 150);
+                  }
                 }}
                 className="hover:text-[#C5A059] transition-colors cursor-pointer text-left"
               >
@@ -141,11 +159,15 @@ export default function Footer({ onNavigate, onOpenQuoteModal, onAdminTrigger }:
             <li>
               <button
                 onClick={() => {
-                  onNavigate("products");
-                  setTimeout(() => {
-                    const el = document.getElementById("commodity-cashew-nuts");
-                    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
-                  }, 150);
+                  if (onSelectProduct) {
+                    onSelectProduct("cashew-nuts");
+                  } else {
+                    onNavigate("products");
+                    setTimeout(() => {
+                      const el = document.getElementById("commodity-cashew-nuts");
+                      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+                    }, 150);
+                  }
                 }}
                 className="hover:text-[#C5A059] transition-colors cursor-pointer text-left"
               >
@@ -155,11 +177,15 @@ export default function Footer({ onNavigate, onOpenQuoteModal, onAdminTrigger }:
             <li>
               <button
                 onClick={() => {
-                  onNavigate("products");
-                  setTimeout(() => {
-                    const el = document.getElementById("commodity-hibiscus-flower");
-                    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
-                  }, 150);
+                  if (onSelectProduct) {
+                    onSelectProduct("hibiscus-flower");
+                  } else {
+                    onNavigate("products");
+                    setTimeout(() => {
+                      const el = document.getElementById("commodity-hibiscus-flower");
+                      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+                    }, 150);
+                  }
                 }}
                 className="hover:text-[#C5A059] transition-colors cursor-pointer text-left"
               >
@@ -169,11 +195,15 @@ export default function Footer({ onNavigate, onOpenQuoteModal, onAdminTrigger }:
             <li>
               <button
                 onClick={() => {
-                  onNavigate("products");
-                  setTimeout(() => {
-                    const el = document.getElementById("commodity-hardwood-charcoal");
-                    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
-                  }, 150);
+                  if (onSelectProduct) {
+                    onSelectProduct("hardwood-charcoal");
+                  } else {
+                    onNavigate("products");
+                    setTimeout(() => {
+                      const el = document.getElementById("commodity-hardwood-charcoal");
+                      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+                    }, 150);
+                  }
                 }}
                 className="hover:text-[#C5A059] transition-colors cursor-pointer text-left"
               >

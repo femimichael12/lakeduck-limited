@@ -6,7 +6,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { 
-  BookOpen, Calendar, User, Clock, ChevronRight, X, Sparkles, 
+  BookOpen, Calendar, User, Clock, ChevronRight, X, 
   Send, CheckCircle2, Search, Share2, Copy, Twitter, Linkedin, 
   MessageSquare, ArrowRight, Eye, RefreshCw, FileText, Globe, Check
 } from "lucide-react";
@@ -558,7 +558,6 @@ export default function Blog() {
                 {/* Trading Opinion block */}
                 <div className="bg-white border-l-2 border-[#C5A059] p-5 space-y-2">
                   <div className="flex items-center gap-2">
-                    <Sparkles className="w-4 h-4 text-[#C5A059]" />
                     <span className="text-[10px] font-bold text-[#1B2E21] uppercase tracking-wider font-mono">Expert Trade Desk Briefing</span>
                   </div>
                   <p className="text-xs text-gray-500 italic font-sans leading-relaxed">

@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { 
   MapPin, Phone, Mail, Clock, Send, CheckCircle2, Trash2, 
   HelpCircle, FileText, Globe, Ship, MessageSquare, ArrowRight,
-  ExternalLink, Bell, Check, Sparkles, Smartphone, AlertCircle
+  ExternalLink, Bell, Check, Smartphone, AlertCircle
 } from "lucide-react";
 import { COMMODITIES } from "../data";
 import { QuoteRequest } from "../types";
@@ -342,7 +342,6 @@ export default function Contact({ initialCommodityId = "", onCloseModal, isModal
                 </p>
               </div>
               <div className="pt-2 border-t border-white/10 font-mono text-[10px] text-[#C5A059] flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-[#C5A059]" />
                 <span>Instant alert and DB entry logged to Supabase standard table container.</span>
               </div>
             </motion.div>
@@ -381,7 +380,7 @@ export default function Contact({ initialCommodityId = "", onCloseModal, isModal
                   
                   <div className="bg-[#FAF8F5] border border-[#1B2E21]/5 p-4 rounded-none space-y-2">
                     <span className="text-[10px] font-mono text-[#C5A059] uppercase font-bold flex items-center gap-1">
-                      <Sparkles className="w-3.5 h-3.5" /> Exporter Verification Service
+                      Exporter Verification Service
                     </span>
                     <p className="text-[11px] text-gray-500 font-light leading-relaxed">
                       Commodities are sun-dried, cleaned, magnetic-separated, and stored under strict cargo regulations in our warehouses at Lagos and Kano.

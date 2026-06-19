@@ -13,9 +13,17 @@ interface NavbarProps {
   currentTab: string;
   setCurrentTab: (tab: string) => void;
   onOpenQuoteModal: (commodityId?: string) => void;
+  onSelectProduct?: (productId: string) => void;
+  onSelectService?: (serviceId: string) => void;
 }
 
-export default function Navbar({ currentTab, setCurrentTab, onOpenQuoteModal }: NavbarProps) {
+export default function Navbar({ 
+  currentTab, 
+  setCurrentTab, 
+  onOpenQuoteModal, 
+  onSelectProduct,
+  onSelectService 
+}: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<"products" | "services" | null>(null);
@@ -118,7 +126,7 @@ export default function Navbar({ currentTab, setCurrentTab, onOpenQuoteModal }: 
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 10 }}
                         transition={{ duration: 0.15 }}
-                        className="absolute left-0 mt-1 w-80 bg-[#F8F5F0] border border-[#1B2E21]/10 rounded-xl shadow-xl overflow-hidden py-2 text-[#1B2E21] z-50 animate-fade-in"
+                        className="absolute left-0 mt-1 w-80 bg-[#F8F5F0] border border-[#1B2E21]/10 rounded-xl shadow-xl overflow-y-auto py-2 text-[#1B2E21] z-50 animate-fade-in max-h-[75vh] scrollbar-thin"
                       >
                         <div className="px-4 py-1.5 border-b border-[#1B2E21]/5 mb-1.5">
                           <p className="text-[10px] font-mono uppercase tracking-wider text-[#C5A059]">Featured Commodities</p>
@@ -127,12 +135,16 @@ export default function Navbar({ currentTab, setCurrentTab, onOpenQuoteModal }: 
                           <button
                             key={commodity.id}
                             onClick={() => {
-                              handleTabClick("products");
-                              // Custom event to scroll to specific commodity
-                              setTimeout(() => {
-                                const el = document.getElementById(`commodity-${commodity.id}`);
-                                if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
-                              }, 100);
+                              if (onSelectProduct) {
+                                onSelectProduct(commodity.id);
+                              } else {
+                                handleTabClick("products");
+                                // Custom event to scroll to specific commodity
+                                setTimeout(() => {
+                                  const el = document.getElementById(`commodity-${commodity.id}`);
+                                  if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+                                }, 100);
+                              }
                               setActiveDropdown(null);
                             }}
                             className="w-full text-left px-4 py-2 hover:bg-[#1B2E21]/5 flex items-start gap-3 transition-colors cursor-pointer group"
@@ -164,11 +176,11 @@ export default function Navbar({ currentTab, setCurrentTab, onOpenQuoteModal }: 
                           <button
                             key={srv.id}
                             onClick={() => {
-                              handleTabClick("services");
-                              setTimeout(() => {
-                                const el = document.getElementById(`service-${srv.id}`);
-                                if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
-                              }, 100);
+                              if (onSelectService) {
+                                onSelectService(srv.id);
+                              } else {
+                                handleTabClick("services");
+                              }
                               setActiveDropdown(null);
                             }}
                             className="w-full text-left px-4 py-2.5 hover:bg-[#1B2E21]/5 flex items-start gap-3.5 transition-colors cursor-pointer group"
@@ -236,11 +248,15 @@ export default function Navbar({ currentTab, setCurrentTab, onOpenQuoteModal }: 
                           <button
                             key={commodity.id}
                             onClick={() => {
-                              handleTabClick("products");
-                              setTimeout(() => {
-                                const el = document.getElementById(`commodity-${commodity.id}`);
-                                if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
-                              }, 150);
+                              if (onSelectProduct) {
+                                onSelectProduct(commodity.id);
+                              } else {
+                                handleTabClick("products");
+                                setTimeout(() => {
+                                  const el = document.getElementById(`commodity-${commodity.id}`);
+                                  if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+                                }, 150);
+                              }
                             }}
                             className="w-full text-left py-1 text-sm text-[#1B2E21]/60 hover:text-[#C5A059] transition-colors flex items-center gap-2 cursor-pointer"
                           >
@@ -257,11 +273,12 @@ export default function Navbar({ currentTab, setCurrentTab, onOpenQuoteModal }: 
                           <button
                             key={srv.id}
                             onClick={() => {
-                              handleTabClick("services");
-                              setTimeout(() => {
-                                const el = document.getElementById(`service-${srv.id}`);
-                                if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
-                              }, 150);
+                              if (onSelectService) {
+                                onSelectService(srv.id);
+                              } else {
+                                handleTabClick("services");
+                              }
+                              setIsOpen(false);
                             }}
                             className="w-full text-left py-1 text-sm text-[#1B2E21]/60 hover:text-[#C5A059] transition-colors flex items-center gap-2 cursor-pointer"
                           >

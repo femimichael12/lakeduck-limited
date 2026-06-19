@@ -33,6 +33,8 @@ export default function App() {
   // Modal State
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   const [preSelectedCommodityId, setPreSelectedCommodityId] = useState("");
+  const [selectedProductId, setSelectedProductId] = useState<string | null>(null);
+  const [selectedServiceId, setSelectedServiceId] = useState<string | null>(null);
 
   // Hidden Administrative Gatekeeper State
   const [isAdminModalOpen, setIsAdminModalOpen] = useState(false);
@@ -109,6 +111,14 @@ export default function App() {
         currentTab={currentTab} 
         setCurrentTab={setCurrentTab} 
         onOpenQuoteModal={() => handleOpenQuoteModal()} 
+        onSelectProduct={(productId) => {
+          setSelectedProductId(productId);
+          setCurrentTab("products");
+        }}
+        onSelectService={(serviceId) => {
+          setSelectedServiceId(serviceId);
+          setCurrentTab("services");
+        }}
       />
 
       {/* Main Content routing framework */}
@@ -197,11 +207,8 @@ export default function App() {
                           <div className="p-6 pt-0 flex gap-2">
                             <button
                               onClick={() => {
+                                setSelectedProductId(crop.id);
                                 setCurrentTab("products");
-                                setTimeout(() => {
-                                  const el = document.getElementById(`commodity-${crop.id}`);
-                                  if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
-                                }, 150);
                               }}
                               className="flex-grow text-center py-2.5 bg-transparent hover:bg-[#1B2E21]/5 text-[#1B2E21] text-[10px] font-mono font-bold uppercase tracking-wider rounded-none transition-colors border border-[#1B2E21]/15 cursor-pointer"
                             >
@@ -390,8 +397,20 @@ export default function App() {
             )}
 
             {currentTab === "about" && <About />}
-            {currentTab === "products" && <Products onOpenQuoteModal={handleOpenQuoteModal} />}
-            {currentTab === "services" && <Services />}
+            {currentTab === "products" && (
+              <Products 
+                onOpenQuoteModal={handleOpenQuoteModal} 
+                initialProductId={selectedProductId}
+                onClearInitialProduct={() => setSelectedProductId(null)}
+              />
+            )}
+            {currentTab === "services" && (
+              <Services 
+                initialServiceId={selectedServiceId}
+                onClearInitialService={() => setSelectedServiceId(null)}
+                onOpenQuoteModal={handleOpenQuoteModal}
+              />
+            )}
             {currentTab === "projects" && <Projects />}
             {currentTab === "blog" && <Blog />}
             {currentTab === "contact" && <Contact />}
@@ -404,6 +423,11 @@ export default function App() {
         onNavigate={setCurrentTab} 
         onOpenQuoteModal={() => handleOpenQuoteModal()} 
         onAdminTrigger={handleCopyrightClick}
+        onSelectProduct={(productId) => {
+          setSelectedProductId(productId);
+          setCurrentTab("products");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
       />
 
       {/* WhatsApp active messaging floating bubble desk */}

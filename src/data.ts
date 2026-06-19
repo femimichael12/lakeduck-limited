@@ -28,8 +28,8 @@ export const COMMODITIES: Commodity[] = [
     image: cocoaImage,
     gallery: [
       cocoaImage,
-      "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&q=80&w=800"
+      "https://images.unsplash.com/photo-1548907040-4d42b5211514?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&q=80&w=800"
     ],
     moistureContent: "7.0% - 7.5% maximum",
     purityLevel: "98.5% minimum",
@@ -63,8 +63,8 @@ export const COMMODITIES: Commodity[] = [
     image: sesameImage,
     gallery: [
       sesameImage,
-      "https://images.unsplash.com/photo-1594756202469-9ff9799b2e4e?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1533230408708-8f9f91d12344?auto=format&fit=crop&q=80&w=800"
+      "https://images.unsplash.com/photo-1621447504864-d8686e1d681c?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1582401656496-9d75f95f9018?auto=format&fit=crop&q=80&w=800"
     ],
     moistureContent: "5.0% - 6.0% maximum",
     purityLevel: "99.5% minimum",
@@ -132,7 +132,7 @@ export const COMMODITIES: Commodity[] = [
     image: cashewImage,
     gallery: [
       cashewImage,
-      "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1626125313941-ab77224f79c4?auto=format&fit=crop&q=80&w=800",
       "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=800"
     ],
     moistureContent: "8.0% - 10.0% maximum",
@@ -200,7 +200,7 @@ export const COMMODITIES: Commodity[] = [
     image: soyImage,
     gallery: [
       soyImage,
-      "https://images.unsplash.com/photo-1533230408708-8f9f91d12344?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&q=80&w=800",
       "https://images.unsplash.com/photo-1628359355624-855775b5c9c8?auto=format&fit=crop&q=80&w=800"
     ],
     moistureContent: "10.0% - 11.5% maximum",
@@ -269,8 +269,8 @@ export const COMMODITIES: Commodity[] = [
     image: groundnutImage,
     gallery: [
       groundnutImage,
-      "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1594756202469-9ff9799b2e4e?auto=format&fit=crop&q=80&w=800"
+      "https://images.unsplash.com/photo-1534119396591-5998ee6f2a04?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?auto=format&fit=crop&q=80&w=800"
     ],
     moistureContent: "6.0% - 7.0% maximum",
     purityLevel: "99.2% minimum HP grade",
@@ -302,7 +302,9 @@ export const COMMODITIES: Commodity[] = [
     detailedDescription: "Sourced directly from women cooperatives in Niger, Kwara, and Oyo states, our organic shea nuts are processed under strict traditional sun-drying and roasting guidelines. Highly prized in Europe and North America for cosmetics manufacturing and chocolate formulations.",
     image: sheaNutsImage,
     gallery: [
-      sheaNutsImage
+      sheaNutsImage,
+      "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1607344645866-009c320c5ab8?auto=format&fit=crop&q=80&w=800"
     ],
     moistureContent: "6.0% maximum",
     purityLevel: "98.5% minimum",
@@ -332,7 +334,9 @@ export const COMMODITIES: Commodity[] = [
     detailedDescription: "Our grade-A organic unrefined shea butter is extracted using traditional, chemical-free filtration processes. By boiling and kneading the shea nut kernels, women-led cooperatives in western Nigeria yield a pristine butter loaded with active vitamins A, E, and F, free of synthetic additives, perfect for premium beauty formulas.",
     image: sheaButterImage,
     gallery: [
-      sheaButterImage
+      sheaButterImage,
+      "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=800"
     ],
     moistureContent: "0.1% maximum",
     purityLevel: "99.9% filtration purity",
@@ -362,7 +366,9 @@ export const COMMODITIES: Commodity[] = [
     detailedDescription: "We collect municipal and commercial end-of-life vehicle tires, sorting them at our Lagos recycling hub. Our automated shredders cut the tires into uniform TDA (Tire Derived Aggregate) chips sized from 50mm to 100mm. Perfect for pyrogenation oil cracking, high-thermal cement kilns, or eco-friendly playground surfacing projects globally.",
     image: eolTiresImage,
     gallery: [
-      eolTiresImage
+      eolTiresImage,
+      "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=800"
     ],
     moistureContent: "0.5% maximum",
     purityLevel: "Free of wire debris (Magnetic separated)",
@@ -392,7 +398,9 @@ export const COMMODITIES: Commodity[] = [
     detailedDescription: "Lakeduck Integrated runs a state-of-the-art plastic recycling center recovering waste plastic beverage containers. Hot-washed inside caustic detergent streams at 85°C, our PET flakes are fully cleared of glue, paper labels, and PVC rings. This ensures an ultra-low contamination index exceeding global standards for polyester staple fiber and mechanical strapping extrusion lines.",
     image: recycledPlasticsImage,
     gallery: [
-      recycledPlasticsImage
+      recycledPlasticsImage,
+      "https://images.unsplash.com/photo-1582408921715-18e7806367c1?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&q=80&w=800"
     ],
     moistureContent: "0.8% maximum",
     purityLevel: "99.9% clean of labels & PVC residues",
@@ -412,6 +420,40 @@ export const COMMODITIES: Commodity[] = [
       { label: "Moisture Content", value: "0.8% or less" },
       { label: "Melting Point", value: "248°C - 252°C" }
     ]
+  },
+  {
+    id: "hardwood-charcoal",
+    name: "Premium Hardwood Ayin Charcoal",
+    category: "Solid Minerals",
+    tagline: "High-density carbon-rich Ayin hardwood lump charcoal for premium heating.",
+    description: "Naturally harvested seasoned Ayin hardwood charcoal with high calorific yield, long-burning lifecycle, and very low gas/smoke omissions.",
+    detailedDescription: "Lakeduck manufactures and exports premium-grade Hardwood lump charcoal made using carbonisation of Ayin (Anogeissus leiocarpus) wood branches. Famously dense, our charcoal burns over 4-6 hours with zero spark hazard, extreme heat output exceeding 7400 kcal/kg, and negligible ash residuals, loaded inside heavy export-grade bags directly to ports.",
+    image: "https://images.unsplash.com/photo-1594911774802-8822a707cbb3?auto=format&fit=crop&q=80&w=800",
+    gallery: [
+      "https://images.unsplash.com/photo-1594911774802-8822a707cbb3?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1473210113405-f3f1e9447e1d?auto=format&fit=crop&q=80&w=800"
+    ],
+    moistureContent: "5.0% - 6.0% maximum",
+    purityLevel: "Carbon Content > 78%",
+    exportDestinations: ["Rotterdam (Netherlands)", "Jebel Ali (UAE)", "Antwerp (Belgium)", "Hamburg (Germany)"],
+    packagingOptions: [
+      "25kg multi-ply printed paper sacks",
+      "Bulk container loose packing with custom cargo barriers"
+    ],
+    specs: [
+      { label: "Fixed Carbon", value: "78% - 82% minimum" },
+      { label: "Calorific Value", value: "7400 - 8000 Kcal/kg" },
+      { label: "Moisture Content", value: "5.0% - 6.0% maximum" },
+      { label: "Ash Content", value: "2.5% - 4.0% maximum" },
+      { label: "Volatile Matter", value: "5.0% - 10.0% max" },
+      { label: "Sparking & Odor", value: "Absolutely absent / sparkless" },
+      { label: "Size Grading", value: "20mm to 120mm natural lump cuts" }
+    ],
+    hsCode: "4402.90.00",
+    origin: "Kwara, Oyo, Kogi (Nigeria)",
+    minimumOrder: "20 Metric Tons (1 x 40ft Container)",
+    packaging: "25kg strong multi-ply paper or polypropylene sacks",
+    harvestPeriod: "All Year Round (Dry Season peak)"
   }
 ];
 
